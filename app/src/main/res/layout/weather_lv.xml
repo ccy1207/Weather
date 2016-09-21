@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:baselineAligned="true"
+    android:background="@drawable/weather1"
+        android:layout_marginTop="10dp"
+    >
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_weather"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text=""
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_data"
+        android:textSize="20dp"
+        android:text=""
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/lv_weather"
+        android:layout_toEndOf="@+id/lv_weather" />
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_week"
+        android:textSize="20dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_noli"
+        android:textSize="20dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+
+
+
+</LinearLayout>

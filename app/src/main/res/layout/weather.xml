@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:layout_marginLeft="16dp"
+
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_et"
+        android:hint="请输入要查询的城市"
+
+        />
+    <Button
+        android:layout_below="@id/weather_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/weather_bnt"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询城市:"
+        android:textSize="20dp"
+        android:layout_below="@+id/weather_bnt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fengsu"
+        android:text=""
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="风速 :"
+          android:textSize="20dp"
+          android:layout_below="@+id/textView7"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:id="@+id/city"
+        android:text=""
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_above="@+id/fengsu"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气 :"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温度 :"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperature"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新时间:"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/temperature"
+        android:layout_alignStart="@+id/temperature" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="未来几天天气"
+    android:layout_below="@id/textView4"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:id="@+id/text5"
+    android:background="@drawable/weather"
+    />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:id="@+id/weather_lv"
+        android:fadingEdge="none"
+
+        ></ListView>
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_lv"
+        android:id="@+id/info_lv1"
+        android:fadingEdge="none"
+
+        ></ListView>
+
+
+</RelativeLayout>

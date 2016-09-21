@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myjson.view.ExprssFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:id="@+id/exp_ed"
+             android:hint="请输入快递单号"
+
+             />
+          <Button
+              android:layout_below="@id/exp_ed"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="查询快递单号"
+              android:id="@+id/exp_bnt"
+
+              />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exp_lv"
+        android:layout_below="@id/exp_bnt"
+        ></ListView>
+
+</RelativeLayout>

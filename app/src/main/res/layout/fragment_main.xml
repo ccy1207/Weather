@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainFragment"
+     android:background="@drawable/main_img"
+    >
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="风速"
+     android:textSize="30sp"
+     android:id="@+id/fra_fusu"
+     android:gravity="center"
+     android:layout_above="@+id/fra_cily"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="济南"
+          android:textSize="30sp"
+        android:id="@+id/fra_cily"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_above="@+id/fra_weather"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/fra_weather"
+        android:background="@drawable/icon_duoyun"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2016-08-05"
+      android:textSize="18sp"
+      android:id="@+id/fra_date"
+
+      android:layout_alignBottom="@+id/fra_weather"
+      android:layout_alignLeft="@+id/fra_cily"
+      android:layout_alignStart="@+id/fra_cily" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="七月初七"
+        android:textSize="20sp"
+        android:id="@+id/fra_noli"
+
+        android:layout_above="@+id/fra_date"
+        android:layout_alignRight="@+id/fra_date"
+        android:layout_alignEnd="@+id/fra_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22℃"
+        android:textSize="50sp"
+        android:id="@+id/fra_temperature"
+
+
+        android:layout_above="@+id/fra_weather"
+        android:layout_toLeftOf="@+id/fra_weather"
+        android:layout_toStartOf="@+id/fra_weather" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新时间：10.000"
+        android:id="@+id/fra_up"
+
+        android:layout_alignBaseline="@+id/fra_cily"
+        android:layout_alignBottom="@+id/fra_cily"
+        android:layout_alignRight="@+id/fra_weather"
+        android:layout_alignEnd="@+id/fra_weather" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fra_week"
+        android:text="星期"
+
+          android:textSize="20sp"
+        android:layout_alignBottom="@+id/fra_date"
+        android:layout_centerHorizontal="true" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+
+       android:id="@+id/linearLayout"
+       android:orientation="horizontal"
+       android:layout_marginBottom="87dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+
+
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/fra_recy"
+           android:layout_alignTop="@+id/fra_week"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史上的今天:"
+        android:textSize="20sp"
+        android:id="@+id/fra_history"
+        android:layout_marginLeft="8dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+
+</RelativeLayout>
